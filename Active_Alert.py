@@ -1,3 +1,4 @@
+
 # Initialize an empty list
 alert_queue = []
 
@@ -9,11 +10,11 @@ while True:
     print("3. Resolve Oldest Alert")
     print("4. Exit System")
 
-    choice = input("Please select an option (1-4): ")
+    choice = input("Please select an option (1-4): ").strip()
 
     # Option 1: Log a new alert
     if choice == "1":
-        threat = input("Enter threat description: ")
+        threat = input("Enter threat description: ").strip()
         alert_queue.append(threat)
         print("Alert logged successfully!")
 
